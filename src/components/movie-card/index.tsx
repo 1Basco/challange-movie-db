@@ -3,11 +3,11 @@ import { formatDateToLongMonth } from "@/utils/format";
 import Image from "next/image";
 import Link from "next/link";
 import UserScoreChart from "../user-score-chart";
-import { IGenre, IMovie } from "@/types/movie.types";
+import { IGenre, IMovieLists } from "@/types/movie.types";
 import GenreList from "../genre-list";
 
 interface IMovieCardProps {
-  movie: IMovie;
+  movie: IMovieLists;
   genreList: Array<IGenre>;
 }
 
