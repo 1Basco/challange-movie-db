@@ -15,6 +15,7 @@ module.exports = {
       colors: {
         "oxford-blue": "#032541",
         "dark-blue": "#031841",
+        "light-blue": "#01b4e4",
       },
     },
   },
