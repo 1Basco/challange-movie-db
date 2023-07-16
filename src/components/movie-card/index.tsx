@@ -29,8 +29,15 @@ const MovieCard: React.FC<IMovieCardProps> = ({
         </Link>
       </div>
       <div className="max-w-[180px] p-4">
-        <div className="-mt-[37px]">
-          <UserScoreChart score={movie.vote_average * 10} />
+        <div className="-mt-[37px] text-sm">
+          <UserScoreChart
+            score={movie.vote_average * 10}
+            cx={"20"}
+            cy={"20"}
+            r={"17"}
+            width={"40"}
+            height={"40"}
+          />
         </div>
         <h2 className="font-bold text-base leading-tight">
           <Link href={`/movie/${movie.id}`} className="hover:text-light-blue">

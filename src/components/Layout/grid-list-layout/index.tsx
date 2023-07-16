@@ -8,7 +8,9 @@ const GridListLayout: React.FC<IGridListLayoutProps> = ({
 }: IGridListLayoutProps): JSX.Element => {
   return (
     <>
-      <h1 className="text-4xl font-bold mb-6 md:mx-16 2xl:mx-36">{title}</h1>
+      <h1 className="text-xl md:text-4xl text-center md:text-left font-bold mb-6 md:mx-16 2xl:mx-36">
+        {title}
+      </h1>
       <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-8 mx-auto">
         {children}
       </div>

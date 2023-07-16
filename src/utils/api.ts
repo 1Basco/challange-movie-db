@@ -48,7 +48,7 @@ export async function getMovieGenreData(): Promise<any> {
 export async function getMovieData(movieId?: string): Promise<any> {
   const res = await fetch(
     process.env.THE_MOVIE_DB_API_BASE_URL +
-      `/movie/${movieId}}?api_key=` +
+      `/movie/${movieId}}?append_to_response=credits&api_key=` +
       process.env.THE_MOVIE_DB_API_KEY
   );
 
