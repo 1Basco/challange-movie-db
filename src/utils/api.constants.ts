@@ -12,13 +12,13 @@ export const POPULAR_MOVIES_URL = `${
 
 export const TOP_RATED_MOVIES_URL = `${
   process.env.THE_MOVIE_DB_API_BASE_URL +
-  "//movie/top_rated?language=en-US&page=1&api_key=" +
+  "/movie/top_rated?language=en-US&page=1&api_key=" +
   process.env.THE_MOVIE_DB_API_KEY
 }`;
 
 export const UPCOMING_MOVIES_URL = `${
   process.env.THE_MOVIE_DB_API_BASE_URL +
-  "//movie/upcoming?language=en-US&page=1&api_key=" +
+  "/movie/upcoming?language=en-US&page=1&api_key=" +
   process.env.THE_MOVIE_DB_API_KEY
 }`;
 
