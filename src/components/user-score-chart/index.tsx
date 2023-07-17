@@ -34,7 +34,7 @@ const UserScoreChart = ({
         }}
       >
         <circle
-          className={`${getColorClass(score)} ${
+          className={`${getColorClass(score)} score-color ${
             score === 0 ? "" : "opacity-40"
           }`}
           strokeWidth="2"
