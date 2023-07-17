@@ -25,7 +25,7 @@ export default async function Movie({
         <>
           <section className="flex w-full">
             <div
-              className="bg-no-repeat mt-[60px] bg-top md:bg-left w-full mx-auto"
+              className="bg-no-repeat mt-[60px] bg-top md:bg-left bg-cover w-full mx-auto"
               style={{
                 backgroundImage: `url(https://image.tmdb.org/t/p/w1920_and_h800_multi_faces${movieData.backdrop_path})`,
               }}
@@ -70,7 +70,7 @@ export default async function Movie({
             </div>
           </section>
           <section className="w-full">
-            <div className="flex max-w-7xl mx-auto p-2 md:p-12 justify-around">
+            <div className="flex flex-col-reverse md:flex-row max-w-7xl mx-auto p-2 md:p-12 justify-around">
               <div className="flex-grow">
                 <h3 className="font-semibold text-base md:text-3xl mb-3 mt-2">
                   Cast

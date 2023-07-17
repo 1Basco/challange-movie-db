@@ -15,7 +15,7 @@ const CastList: React.FC<ICastListProps> = ({ castData }: ICastListProps) => {
 
   return (
     <div>
-      <div className="grid max-w-fit grid-cols-2 md:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7 gap-x-3 gap-y-2 md:gap-y-5">
+      <div className="grid max-w-fit mx-auto md:mx-0 grid-cols-2 md:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7 gap-x-3 gap-y-2 md:gap-y-5">
         {actingCast.map((cast, key) => (
           <div key={key}>
             <div className="shadow-lg shadow-gray-300 h-full rounded-lg">
