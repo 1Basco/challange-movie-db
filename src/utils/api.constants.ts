@@ -2,6 +2,8 @@ export const POSTER_SIZE = {
   lg: `${process.env.THE_MOVIE_DB_BASE_IMAGE_URL}` + "/w500",
   md: `${process.env.THE_MOVIE_DB_BASE_IMAGE_URL}` + "/w342",
   sm: `${process.env.THE_MOVIE_DB_BASE_IMAGE_URL}` + "/w154",
+  profile_pic:
+    `${process.env.THE_MOVIE_DB_BASE_IMAGE_URL}` + "/w138_and_h175_face",
 };
 
 export const POPULAR_MOVIES_URL = `${

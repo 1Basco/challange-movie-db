@@ -47,7 +47,7 @@ export interface IMovieDetails {
     }
   ];
   release_date: string;
-  revenue?: number;
+  revenue: number;
   runtime: number;
   spoken_languages: [];
   status: string;

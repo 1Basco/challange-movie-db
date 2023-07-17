@@ -37,3 +37,12 @@ export const formatTimeToHM = (minutes: number) => {
 
   return `${hourString} ${minuteString}`.trim();
 };
+
+export const getLanguageName = new Intl.DisplayNames(["en"], {
+  type: "language",
+});
+
+export const USDollar = new Intl.NumberFormat("en-US", {
+  style: "currency",
+  currency: "USD",
+});
