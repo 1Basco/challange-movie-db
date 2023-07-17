@@ -16,7 +16,7 @@ const MovieHeader: React.FC<IMovieHeaderProps> = ({
           &nbsp;({getFullYear(movieData.release_date)})
         </span>
       </h2>
-      <div className="font-light">
+      <div className="font-light text-sm md:text-base">
         <span>{formatLocaleDate(movieData.release_date)} (US) &nbsp;</span>
         <span>
           &#183;{" "}

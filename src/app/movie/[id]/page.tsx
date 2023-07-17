@@ -22,14 +22,14 @@ export default async function Movie({
       <section className="flex w-full">
         {params.id && movieData ? (
           <div
-            className="bg-no-repeat mt-[60px] bg-left w-full mx-auto"
+            className="bg-no-repeat mt-[60px] bg-top md:bg-left w-full mx-auto"
             style={{
               backgroundImage: `url(https://image.tmdb.org/t/p/w1920_and_h800_multi_faces${movieData.backdrop_path})`,
             }}
           >
             <div className="bg-opacity-70 bg-dark-blue">
-              <section className="flex gap-10 p-12 max-w-7xl mx-auto">
-                <div className="flex h-auto min-w-[300px]">
+              <section className="flex gap-10 p-2 md:p-12 max-w-7xl mx-auto flex-col md:flex-row">
+                <div className="flex h-auto min-w-[300px] mx-auto">
                   <Image
                     width={300}
                     height={450}
@@ -44,15 +44,17 @@ export default async function Movie({
                       <MovieHeader movieData={movieData} />
                       <MovieActions movieData={movieData} />
                       <div>
-                        <h3 className="text-xl italic font-light">
+                        <h3 className="text-base md:text-xl italic font-light">
                           {movieData.tagline}
                         </h3>
                       </div>
                       <div>
-                        <h3 className="font-medium text-2xl mb-3 mt-2">
+                        <h3 className="font-medium text-base md:text-2xl mb-3 mt-2">
                           Overview
                         </h3>
-                        <p className="font-light">{movieData.overview}</p>
+                        <p className="font-light text-sm md:text-base">
+                          {movieData.overview}
+                        </p>
                       </div>
                       <div>
                         <CastOverview castData={movieData.credits.cast} />
@@ -60,6 +62,9 @@ export default async function Movie({
                     </div>
                   </div>
                 </div>
+              </section>
+              <section className="flex max-w-7xl ">
+                <div></div>
               </section>
             </div>
           </div>

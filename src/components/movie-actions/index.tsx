@@ -12,7 +12,7 @@ const MovieActions: React.FC<IMovieActionsProps> = ({
 }: IMovieActionsProps) => {
   return (
     <ul className="flex items-center justify-start w-full my-2">
-      <li className="mr-6">
+      <li className="mr-0 md:mr-6">
         <div className="text-3xl md:inline-flex items-center hidden">
           <UserScoreChart
             score={movieData.vote_average * 10}
